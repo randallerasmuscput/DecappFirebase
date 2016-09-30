@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Comments on Suspects"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:background="@drawable/input_background"
+        android:padding="15dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:layout_alignEnd="@+id/btnUpdate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:background="@drawable/input_background"
+        android:padding="15dp"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="103dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Comment"
+        android:id="@+id/btnUpdate"
+        android:layout_above="@+id/btnBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bt_background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Comment Official"
+        android:ems="10"
+        android:id="@+id/edtTextCommentOfficial"
+        android:padding="15dp"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignLeft="@+id/btnUpdate"
+        android:layout_alignStart="@+id/btnUpdate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:background="@drawable/bt_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnUpdate"
+        android:layout_alignStart="@+id/btnUpdate"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
